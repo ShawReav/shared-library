@@ -1,5 +1,5 @@
 
-def call(toolbelt,SF_CONSUMER_KEY,"SF_INSTANCE_URL","SF_USERNAME"){
+def call(toolbelt,SF_CONSUMER_KEY,SF_INSTANCE_URL,SF_USERNAME){
   rc = command "echo y | ${toolbelt}sfdx plugins:install sfpowerkit"
       			if (isUnix()) 
 				{
