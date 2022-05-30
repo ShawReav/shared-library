@@ -1,8 +1,3 @@
- SF_CONSUMER_KEY=env.SF_CONSUMER_KEY
- SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://login.salesforce.com"
- SF_USERNAME=env.SF_USERNAME
- toolbelt = tool 'toolbelt'
-
 def call(){
   rc = command "echo y | ${toolbelt}sfdx plugins:install sfpowerkit"
       			if (isUnix()) 
