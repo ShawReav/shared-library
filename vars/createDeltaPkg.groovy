@@ -1,4 +1,4 @@
-def call() {
+def call(toolbelt,SF_DELTA_FOLDER, String SF_SOURCE_COMMIT_ID, String SF_TARGET_COMMIT_ID) {
   if (DEPLOYMENT_TYPE == 'DELTA'){	
                   if (isUnix()) 
         {
