@@ -1,4 +1,4 @@
-def toolbelt = tool 'toolbelt'
+
 def call(toolbelt){
   rc = command "echo y | ${toolbelt}sfdx plugins:install sfpowerkit"
       			if (isUnix()) 
