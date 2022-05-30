@@ -3,7 +3,7 @@
    def SF_USERNAME=env.SF_USERNAME
    def toolbelt = tool 'toolbelt'
 
-def call(toolbelt,SF_CONSUMER_KEY,'SF_INSTANCE_URL','SF_USERNAME'){
+def call(toolbelt,string SF_CONSUMER_KEY, String SF_INSTANCE_URL, String SF_USERNAME){
   rc = command "echo y | ${toolbelt}sfdx plugins:install sfpowerkit"
       			if (isUnix()) 
 				{
